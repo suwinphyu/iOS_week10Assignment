@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="OuterCollectionViewCell" customModule="netflixExercise" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="158"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="385" height="158"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Wu-Fc-N14">
+                        <rect key="frame" x="0.0" y="0.0" width="385" height="158"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="FlO-hd-tAh">
+                                <rect key="frame" x="0.0" y="0.0" width="385" height="158"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="158" id="LXv-Bk-aya"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="u1c-Md-HIQ">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="FlO-hd-tAh" secondAttribute="trailing" id="E0k-na-pqp"/>
+                            <constraint firstItem="FlO-hd-tAh" firstAttribute="top" secondItem="2Wu-Fc-N14" secondAttribute="top" id="Nao-oN-GWq"/>
+                            <constraint firstItem="FlO-hd-tAh" firstAttribute="leading" secondItem="2Wu-Fc-N14" secondAttribute="leading" id="VfQ-fP-R9o"/>
+                            <constraint firstAttribute="bottom" secondItem="FlO-hd-tAh" secondAttribute="bottom" id="t1H-m7-k7X"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="2Wu-Fc-N14" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="KPl-vK-bQx"/>
+                <constraint firstItem="2Wu-Fc-N14" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="MKK-Jv-Ws5"/>
+                <constraint firstAttribute="bottom" secondItem="2Wu-Fc-N14" secondAttribute="bottom" id="PmU-OG-fQ1"/>
+                <constraint firstAttribute="trailing" secondItem="2Wu-Fc-N14" secondAttribute="trailing" id="vWb-24-LTd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="385" height="158"/>
+            <connections>
+                <outlet property="outerCollectionView" destination="FlO-hd-tAh" id="CiS-4v-c2v"/>
+            </connections>
+            <point key="canvasLocation" x="225.36231884057972" y="108.48214285714285"/>
+        </collectionViewCell>
+    </objects>
+</document>

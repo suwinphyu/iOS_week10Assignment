@@ -1,0 +1,26 @@
+PODS:
+  - ReachabilitySwift (4.3.1)
+  - SDWebImage (5.1.0):
+    - SDWebImage/Core (= 5.1.0)
+  - SDWebImage/Core (5.1.0)
+  - YoutubePlayer-in-WKWebView (0.3.1)
+
+DEPENDENCIES:
+  - ReachabilitySwift
+  - SDWebImage
+  - YoutubePlayer-in-WKWebView (~> 0.3.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ReachabilitySwift
+    - SDWebImage
+    - YoutubePlayer-in-WKWebView
+
+SPEC CHECKSUMS:
+  ReachabilitySwift: 4032e2f59586e11e3b0ebe15b167abdd587a388b
+  SDWebImage: fb387001955223213dde14bc08c8b73f371f8d8f
+  YoutubePlayer-in-WKWebView: 86f6b4c04797296071585b92724f3904d0273f12
+
+PODFILE CHECKSUM: c3976a0b5fc6907db17f0711f47b344052d5190b
+
+COCOAPODS: 1.7.5
